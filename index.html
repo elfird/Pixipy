@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102a43" />
+    <title>Pixipy | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=5" />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <section class="brand-panel" aria-label="Tentang Pixipy">
+        <div class="brand-lockup">
+          <span class="brand-mark">p</span><span>pixipy</span>
+        </div>
+        <div class="brand-copy">
+          <p class="eyebrow">Ruang kerja visualmu</p>
+          <h1>Ide bagus layak punya tempat untuk tumbuh.</h1>
+          <p class="lede">
+            Simpan, susun, dan kembangkan inspirasi visual dalam satu ruang yang
+            terasa milikmu.
+          </p>
+        </div>
+        <button class="visual-stage" id="visual-stage" type="button" aria-label="Putar komposisi visual 3D">
+          <div class="visual-card visual-card-back"><span>PIXIPY</span></div>
+          <div class="visual-card visual-card-middle"><span>01</span><small>CREATE<br />YOUR<br />FLOW</small></div>
+          <div class="visual-card visual-card-front"><span class="visual-orb"></span><strong>Make<br />space<br />for ideas.</strong><i></i></div>
+        </div>
+        <div class="panel-note">
+          <span class="note-dot"></span
+          ><span>Tempat tenang untuk mulai berkarya</span>
+        </div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="login-title">
+        <div class="form-wrap">
+          <div class="mobile-brand">
+            <span class="brand-mark">p</span><span>pixipy</span>
+          </div>
+          <div class="form-heading">
+            <p class="eyebrow">Selamat datang kembali</p>
+            <h2 id="login-title">Masuk ke Pixipy</h2>
+            <p>
+              Belum punya akun? <a href="#" id="signup-link">Daftar sekarang</a>
+            </p>
+          </div>
+
+          <form id="login-form" novalidate>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="nama@email.com"
+                required
+              />
+              <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="field-group">
+              <div class="label-row">
+                <label for="password">Kata sandi</label
+                ><a href="#" id="forgot-link">Lupa kata sandi?</a>
+              </div>
+              <div class="password-wrap">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Masukkan kata sandi"
+                  minlength="6"
+                  required
+                />
+                <button
+                  class="icon-button"
+                  id="password-toggle"
+                  type="button"
+                  aria-label="Tampilkan kata sandi"
+                  title="Tampilkan kata sandi"
+                >
+                  Tampilkan
+                </button>
+              </div>
+              <span class="field-error" id="password-error"></span>
+            </div>
+            <label class="checkbox-row"
+              ><input type="checkbox" id="remember" />
+              <span>Ingat saya di perangkat ini</span></label
+            >
+            <button class="submit-button" type="submit">
+              <span>Masuk</span><span aria-hidden="true">&#8594;</span>
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <div class="divider"><span>atau lanjutkan dengan</span></div>
+          <button class="social-button" type="button" id="google-button">
+            <span class="google-icon">G</span><span>Google</span>
+          </button>
+          <p class="legal">
+            Dengan masuk, kamu menyetujui <a href="#">Ketentuan Layanan</a> dan
+            <a href="#">Kebijakan Privasi</a> Pixipy.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="app.js?v=5"></script>
+  </body>
+</html>

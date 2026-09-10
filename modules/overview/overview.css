@@ -1,0 +1,64 @@
+.overview-screen {
+    color: #dce5f5;
+}
+
+.overview-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0 20px;
+}
+
+.overview-kicker {
+    margin: 0 0 5px;
+    color: #8b9bb7;
+    font-size: 12px;
+}
+
+.overview-heading h1 {
+    margin: 0;
+    color: #f0f4ff;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 28px;
+}
+
+.revenue-card,
+.booth-card,
+.top-booth-card {
+    border: 1px solid #26344e;
+    border-radius: 15px;
+    background: #0a1222;
+}
+
+.overview-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+.overview-bottom {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 17px;
+}
+
+@media (max-width: 900px) {
+    .overview-stat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overview-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Overview keeps the reference content, using the light dashboard palette. */
+.overview-screen { color: #17212b; }
+.overview-kicker { color: #168b5b; }.overview-heading h1 { color: #17212b; }.overview-heading p:not(.overview-kicker) { color: #6f7b78; }
+.date-card { border-color: #dce6e0; color: #53625d; background: #fff; }.date-card strong { color: #17212b; }.date-card:hover { border-color: #04e875; background: #fff; }
+.revenue-card, .booth-card, .top-booth-card, .overview-stat-grid article { border-color: #e1e8e4; background: #fff; }
+.revenue-heading span, .overview-stat-grid span { color: #72807a; }.revenue-heading strong, .overview-stat-grid strong { color: #17212b; }.revenue-heading p { color: #17212b; }.revenue-heading p small, .overview-stat-grid small, .overview-stat-grid em { color: #71807a; }
+.revenue-heading b { color: #087b4a; background: #dff8ea; }.period-tabs { border-color: #dfe8e2; }.period-tabs button { color: #6f7b78; }.period-tabs .selected { color: #063527; background: #04e875; }.chart-fill { fill: rgba(4, 232, 117, .16); }.chart-line { stroke: #087b4a; }.revenue-chart > span { color: #78867f; }
+.booth-card h2, .top-booth-card h2 { color: #17212b; }.booth-card > p, .top-booth-card > p { color: #6f7b78; }.booth-card input { color: #17212b; background: #f1f5f3; }.booth-head { color: #65736d; background: #f1f5f3; }.booth-row { color: #27352f; border-color: #edf1ef; }.donut { background: conic-gradient(#04a85d 0 41%, #38d98a 41% 82%, #8be9b8 82% 100%); }.donut::before { background: #fff; }.donut span, .legend span { color: #6f7b78; }.donut strong { color: #17212b; }.legend i { background: #04a85d; }.legend span:nth-child(2) i { background: #38d98a; }.legend span:nth-child(3) i { background: #8be9b8; }.legend b { color: #73817b; }
+.overview-stat-grid i { border-color: #04a85d; }.overview-stat-grid article:nth-child(2) i { border-color: #2fce7d; }.overview-stat-grid article:nth-child(3) i { border-color: #04a85d; }.overview-stat-grid article:nth-child(4) i { border-color: #48d994; }
+body.dark-mode .overview-screen { color: #dce5f5; } body.dark-mode .overview-kicker { color: #8b9bb7; } body.dark-mode .overview-heading h1, body.dark-mode .overview-stat-grid strong, body.dark-mode .revenue-heading strong, body.dark-mode .booth-card h2, body.dark-mode .top-booth-card h2 { color: #e7edf9; } body.dark-mode .overview-heading p:not(.overview-kicker), body.dark-mode .revenue-heading p, body.dark-mode .overview-stat-grid small, body.dark-mode .overview-stat-grid em, body.dark-mode .booth-card > p, body.dark-mode .top-booth-card > p, body.dark-mode .legend span { color: #8492ad; } body.dark-mode .date-card, body.dark-mode .revenue-card, body.dark-mode .booth-card, body.dark-mode .top-booth-card, body.dark-mode .overview-stat-grid article { border-color: #26344e; background: #0a1222; } body.dark-mode .date-card { color: #94a3bf; } body.dark-mode .date-card strong { color: #edf2ff; } body.dark-mode .booth-card input { color: #e5ebf8; background: #111b30; } body.dark-mode .booth-head { color: #8291aa; background: #101a2d; } body.dark-mode .booth-row { color: #d9e2f3; border-color: #1a2941; } body.dark-mode .donut { background: conic-gradient(#2d1bc1 0 41%, #5f4cf2 41% 82%, #755cff 82% 100%); } body.dark-mode .donut::before { background: #0a1222; } body.dark-mode .donut strong { color: #e8eefb; }
